@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0055)file:///C:/Users/bhavy/OneDrive/Desktop/VedicRatna.HTML -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedic Ratna Lab — Authentic Stone &amp; Rudraksha Testing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./Index_files/css2" rel="stylesheet">
+    <title>Vedic Ratna Lab — Authentic Stone & Rudraksha Testing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* Exact Theme Colors and Spacing Engine Mapping */
@@ -179,7 +179,7 @@
             position: absolute;
             inset: 0;
             z-index: -10;
-            background: url('https://stone-blessings-test.lovable.app/assets/hero-stones-CCewCQs4.jpg') center/cover no-repeat;
+            background: url('https://images.unsplash.com/photo-1615228939096-9ead6c74008e?q=80&w=1600') center/cover no-repeat;
             opacity: 0.40; 
         }
 
@@ -431,7 +431,7 @@
         .search-bar-input { flex: 1; background: var(--bg-dark); border: 1px solid rgba(212, 163, 89, 0.3); padding: 16px; color: #fff; font-size: 1rem; border-radius: 2px; font-family: inherit; letter-spacing: 0.5px; }
         .search-bar-input:focus { outline: 1px solid var(--gold-primary); }
         .search-action-btn { background: var(--orange-accent); color: var(--bg-dark); border: none; padding: 0 32px; font-weight: 700; font-size: 0.9rem; border-radius: 2px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
-        .output-card-target { margin-top: 32px; display: none; }
+        .output-card-target { margin-top: 32px; display: none; } /* Enforced to hidden by structural default */
 
         .secure-cert-layout { background: #070301; border: 2px solid var(--gold-primary); padding: 32px; border-radius: 2px; background-image: linear-gradient(rgba(212, 163, 89, 0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(212, 163, 89, 0.01) 1px, transparent 1px); background-size: 20px 20px; }
         .cert-header-meta { display: flex; justify-content: space-between; font-size: 0.65rem; color: var(--gold-primary); letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px dashed rgba(212, 163, 89, 0.25); padding-bottom: 12px; margin-bottom: 24px; font-weight: 600; }
@@ -470,34 +470,31 @@
 </head>
 <body>
 
-    <!-- Unified Header Menu Tabs -->
     <header>
         <div class="nav-container">
-            <div class="brand-block" onclick="routeSPAView(&#39;home&#39;)">
+            <div class="brand-block" onclick="routeSPAView('home')">
                 <span class="om-logo">ॐ</span>
                 <div class="brand-text">
                     <span class="main-title">Vedic Ratna Lab</span>
-                    <span class="sub-title">Stone &amp; Rudraksha Testing</span>
+                    <span class="sub-title">Stone & Rudraksha Testing</span>
                 </div>
             </div>
             <nav class="nav-links">
-                <span id="navnode-home" class="nav-link active" onclick="routeSPAView(&#39;home&#39;)">Home</span>
-                <span id="navnode-services" class="nav-link" onclick="routeSPAView(&#39;services&#39;)">Services</span>
-                <span id="navnode-stones" class="nav-link" onclick="routeSPAView(&#39;stones&#39;)">Stones</span>
-                <span id="navnode-booking" class="nav-link" onclick="routeSPAView(&#39;booking&#39;)">Book a Test</span>
-                <span id="navnode-verify" class="nav-link" onclick="routeSPAView(&#39;verify&#39;)">Verification</span>
-                <span id="navnode-contact" class="nav-link" onclick="routeSPAView(&#39;contact&#39;)">Contact</span>
+                <span id="navnode-home" class="nav-link active" onclick="routeSPAView('home')">Home</span>
+                <span id="navnode-services" class="nav-link" onclick="routeSPAView('services')">Services</span>
+                <span id="navnode-stones" class="nav-link" onclick="routeSPAView('stones')">Stones</span>
+                <span id="navnode-booking" class="nav-link" onclick="routeSPAView('booking')">Book a Test</span>
+                <span id="navnode-verify" class="nav-link" onclick="routeSPAView('verify')">Verification</span>
+                <span id="navnode-contact" class="nav-link" onclick="routeSPAView('contact')">Contact</span>
             </nav>
-            <button class="header-action-btn" onclick="routeSPAView(&#39;booking&#39;)">Book Slot</button>
+            <button class="header-action-btn" onclick="routeSPAView('booking')">Book Slot</button>
         </div>
     </header>
 
     <div class="content-column-parent">
 
-        <!-- VIEW SECTION 1: HOMEPAGE PLATFORM -->
         <div id="viewframe-home" class="spa-view-wrapper" style="display: block;">
             
-            <!-- Exact full-bleed image copy configuration from template screenshots -->
             <section class="hero-banner-section">
                 <div class="hero-background-media"></div>
                 <div class="hero-gradient-overlay"></div>
@@ -508,13 +505,12 @@
                     <p class="description">For generations, our independent testing architecture has authenticated high-value rudraksha, navratna, and sacred items—unifying cutting-edge optical spectroscopy with classical shastra analysis parameters.</p>
                     
                     <div class="cta-row" style="margin-bottom: 0;">
-                        <button class="btn-filled" onclick="routeSPAView(&#39;booking&#39;)">Book a Test</button>
-                        <button class="btn-outlined" onclick="routeSPAView(&#39;stones&#39;)">Explore stones we test →</button>
+                        <button class="btn-filled" onclick="routeSPAView('booking')">Book a Test</button>
+                        <button class="btn-outlined" onclick="routeSPAView('stones')">Explore stones we test →</button>
                     </div>
                 </div>
             </section>
 
-            <!-- Metrics Matrix Cell Overlay -->
             <div class="composite-grid-border" style="margin-top: 40px;">
                 <div class="grid-cell-block"><div class="cell-large-stat">40,000+</div><div class="cell-stat-label">Stones certified</div></div>
                 <div class="grid-cell-block"><div class="cell-large-stat">1986</div><div class="cell-stat-label">Established</div></div>
@@ -522,7 +518,6 @@
                 <div class="grid-cell-block"><div class="cell-large-stat">24 hr</div><div class="cell-stat-label">Report turnaround</div></div>
             </div>
 
-            <!-- What We Test Grid Block -->
             <span class="eyebrow" style="margin-top: 60px;">Scope of Testing</span>
             <div class="split-content-panel">
                 <div>
@@ -531,21 +526,20 @@
                     <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">Every item passes through a documented chain — visual, instrumental, and ritual checks — before a certificate is issued under our seal.</p>
                 </div>
                 <div class="scope-mini-grid">
-                    <div class="scope-cell"><h3>Rudraksha</h3><p>1 to 21 mukhi, Nepali &amp; Indonesian — authenticity, mukhi-count, and X-ray verified.</p></div>
+                    <div class="scope-cell"><h3>Rudraksha</h3><p>1 to 21 mukhi, Nepali & Indonesian — authenticity, mukhi-count, and X-ray verified.</p></div>
                     <div class="scope-cell"><h3>Navratna</h3><p>Ruby, Pearl, Coral, Emerald, Yellow Sapphire, Diamond, Blue Sapphire, Hessonite, Cat's Eye.</p></div>
-                    <div class="scope-cell"><h3>Shaligram &amp; Parad</h3><p>Sacred shilas from traditional riverbeds and solidified mercury items examined by tradition.</p></div>
-                    <div class="scope-cell"><h3>Sphatik &amp; Malas</h3><p>Crystal quality, mala bead counts, and ritual sanctity verified.</p></div>
+                    <div class="scope-cell"><h3>Shaligram & Parad</h3><p>Sacred shilas from traditional riverbeds and solidified mercury items examined by tradition.</p></div>
+                    <div class="scope-cell"><h3>Sphatik & Malas</h3><p>Crystal quality, mala bead counts, and ritual sanctity verified.</p></div>
                 </div>
             </div>
 
-            <!-- Horizontal Split section matching Our Pariksha microscope tray layout -->
             <div class="split-column-flex-panel" style="margin-top: 80px;">
                 <div class="split-asset-frame">
-                    <img src="./Index_files/lab-Dhc5wyop.jpg" alt="Laboratory Microscope Examination Tray System">
+                    <img src="lab-Dhc5wyop.jpg" alt="Laboratory Microscope Examination Tray System">
                 </div>
                 <div>
                     <span class="eyebrow">Our pariksha</span>
-                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: &#39;Playfair Display&#39;, serif;">Five steps from doubt to darshan.</h2>
+                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: 'Playfair Display', serif;">Five steps from doubt to darshan.</h2>
                     <div class="process-list">
                         <div class="process-node"><span class="node-index">1</span><div class="node-body"><h3>Visual examination</h3><p>Loupe and 10x microscope inspection by a senior staff gemologist.</p></div></div>
                         <div class="process-node"><span class="node-index">2</span><div class="node-body"><h3>Instrumental tests</h3><p>Refractometer boundaries, specific gravity indices, UV fluorescence, and where needed, X-ray.</p></div></div>
@@ -557,23 +551,21 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 2: SERVICES MENU -->
         <div id="viewframe-services" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Services Portfolio</span>
             <h1 class="section-title">A complete pariksha menu.</h1>
             <p class="description">Transparent pricing. Reports issued in writing with photographs. All instruments calibrated quarterly by staff gemologists.</p>
             <div class="ornament-divider" style="max-width: 100%; margin-bottom: 40px;"></div>
 
-            <!-- --- FIXED EXPLICIT ATTACHMENT: KARUNGALI MALA MASTERY SECTION AT THE TOP --- -->
             <div class="split-column-flex-panel" style="margin-top: 20px; margin-bottom: 56px;">
                 <div class="split-asset-frame" style="height: 440px;">
-                    <img src="./Index_files/Govt._Certified_Rudraksha_Karungali_Mala.webp" alt="Govt. Certified Rudraksha Karungali Mala Visual Record Layout">
+                    <img src="Govt._Certified_Rudraksha_Karungali_Mala.webp" alt="Govt. Certified Rudraksha Karungali Mala Visual Record Layout">
                 </div>
                 <div>
                     <span class="eyebrow">Core Expertise Area</span>
-                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: &#39;Playfair Display&#39;, serif; margin-bottom: 16px;">Vedic Ratna Lab stands as the definitive global authority in authentic Karungali Mala certification.</h2>
+                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: 'Playfair Display', serif; margin-bottom: 16px;">Vedic Ratna Lab stands as the definitive global authority in authentic Karungali Mala certification.</h2>
                     <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; font-weight: 300; margin-bottom: 16px;">Our specialized laboratory cell executes meticulous validation processes for combined Karungali Mala and Rudraksha strings. Every sacred assembly undergoes continuous density profiling, cell arrangement audits, and atomic fluorescence spectroscopy to verify wood grain cellular matrix purity alongside authentic seed mukhi compartmental counts.</p>
-                    <p style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 500;">✓ Verification of Ebony Grain Metrics • Detection of Artificial Infusions • Fiber Lattice Pass</p>
+                    <p style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 500;">✓ Verification of Ebony Grain Metrics &bull; Detection of Artificial Infusions &bull; Fiber Lattice Pass</p>
                 </div>
             </div>
 
@@ -581,57 +573,55 @@
                 <article class="menu-card">
                     <h2>Rudraksha Authentication</h2><div class="price-tag">₹ 300 per bead</div>
                     <p>Water test, copper-coin rotation, X-ray scan for mukhi confirmation, and origin certification (Nepali / Indonesian / Indian).</p>
-                    <ul><li><span>✦</span>1 to 21 mukhi</li><li><span>✦</span>Gauri-Shankar &amp; Ganesh</li><li><span>✦</span>Origin &amp; age estimate</li></ul>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <ul><li><span>✦</span>1 to 21 mukhi</li><li><span>✦</span>Gauri-Shankar & Ganesh</li><li><span>✦</span>Origin & age estimate</li></ul>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
                     <h2>Navratna Gem Report</h2><div class="price-tag">₹ 1,200 per stone</div>
                     <p>Full gemological report with RI, SG, fluorescence, inclusions and weight. Natural vs treated vs synthetic classification.</p>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
                     <h2>Shaligram Pariksha</h2><div class="price-tag">₹ 500 per shila</div>
                     <p>Examination of chakra markings, fossil clarity and reference against the Skanda and Padma Puranas by our verification specialists.</p>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
                     <h2>Parad Verification</h2><div class="price-tag">₹ 800 per piece</div>
                     <p>Density, chemical purity, and traditional process checks for solidified mercury shivlings and rosary beads.</p>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
-                    <h2>Sphatik &amp; Crystal Testing</h2><div class="price-tag">₹ 400 per piece</div>
+                    <h2>Sphatik & Crystal Testing</h2><div class="price-tag">₹ 400 per piece</div>
                     <p>Natural sphatik vs synthetic glass differentiation using RI metrics, double refraction, and structural inclusion study.</p>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
                     <h2>On-site Temple Service</h2><div class="price-tag">On request</div>
                     <p>Our team visits institutional trusts and ashrams with a specialized mobile testing kit for verification audits of large collections.</p>
-                    <span class="menu-card-link" onclick="routeSPAView(&#39;booking&#39;)">Book this test →</span>
+                    <span class="menu-card-link" onclick="routeSPAView('booking')">Book this test →</span>
                 </article>
             </div>
         </div>
 
-        <!-- VIEW SECTION 3: STONES PLATFORM REFERENCE GUIDE -->
         <div id="viewframe-stones" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Reference guide</span>
             <h1 class="section-title">Every sacred stone, decoded.</h1>
             <p class="description">A working reference for pilgrims, jewellers, and devotees — the holy items we examine daily, their tradition, and authentic benchmarks.</p>
 
-            <!-- Horizontal Split section mirroring Rudraksha platter layout -->
             <div class="split-column-flex-panel" style="margin-top: 40px; items-align: flex-start;">
                 <div class="split-asset-frame">
-                    <img src="./Index_files/rudraksha-B8YEuaXI.jpg" alt="Traditional Platter Holding Premium Authenticated Seeds">
+                    <img src="rudraksha-B8YEuaXI.jpg" alt="Traditional Platter Holding Premium Authenticated Seeds">
                 </div>
                 <div>
                     <span class="eyebrow">Rudraksha</span>
-                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: &#39;Playfair Display&#39;, serif; margin-bottom: 16px;">From the tears of Mahadev.</h2>
+                    <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: 'Playfair Display', serif; margin-bottom: 16px;">From the tears of Mahadev.</h2>
                     <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; font-weight: 300;">Each mukhi (face) of a rudraksha bead carries a presiding deity. Authenticity is verified by the natural mukhi-line continuity, X-ray of the inner compartments, and traditional water and copper-coin tests.</p>
                     
                     <div class="mukhi-breakdown-matrix">
                         <div class="mukhi-matrix-cell"><div class="mukhi-title">1 Mukhi</div><div class="mukhi-deity">Lord Shiva</div><div class="mukhi-desc">Highest spiritual focus</div></div>
                         <div class="mukhi-matrix-cell"><div class="mukhi-title">2 Mukhi</div><div class="mukhi-deity">Ardhanarishwar</div><div class="mukhi-desc">Harmony in relationships</div></div>
-                        <div class="mukhi-matrix-cell"><div class="mukhi-title">3 Mukhi</div><div class="mukhi-deity">Agni</div><div class="mukhi-desc">Confidence &amp; energy</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">3 Mukhi</div><div class="mukhi-deity">Agni</div><div class="mukhi-desc">Confidence & energy</div></div>
                         <div class="mukhi-matrix-cell"><div class="mukhi-title">4 Mukhi</div><div class="mukhi-deity">Brahma</div><div class="mukhi-desc">Clarity of thought</div></div>
                         <div class="mukhi-matrix-cell"><div class="mukhi-title">5 Mukhi</div><div class="mukhi-deity">Kalagni Rudra</div><div class="mukhi-desc">Peace · most common</div></div>
                         <div class="mukhi-matrix-cell"><div class="mukhi-title">6 Mukhi</div><div class="mukhi-deity">Kartikeya</div><div class="mukhi-desc">Willpower</div></div>
@@ -641,7 +631,6 @@
                 </div>
             </div>
 
-            <!-- Planetary Gems Subgrid -->
             <span class="eyebrow" style="margin-top: 60px;">Navratna Planets</span>
             <div class="planetary-gems-grid">
                 <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #c91432 70%);"></span><div><h4>Ruby (Manik)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Sun</div></div></div>
@@ -656,7 +645,6 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 4: BOOKING RESERVATION DASHBOARD -->
         <div id="viewframe-booking" class="spa-view-wrapper" style="display: none;">
             <div class="split-content-panel" style="display:grid; grid-template-columns: 2fr 3fr; gap:48px;">
                 <div>
@@ -665,9 +653,9 @@
                     <p style="color:var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 32px;">Specimen logging scheduling guarantees dedicated allocation of scientific spectroscopy instruments for same-day digital ledger cataloging.</p>
                 </div>
                 <div class="form-panel">
-                    <form onsubmit="event.preventDefault(); alert(&#39;Booking logged successfully inside validation container.&#39;);">
-                        <div class="form-element-wrap"><label>Your name</label><input required="" class="input-control" type="text" placeholder="Enter name"></div>
-                        <div class="form-element-wrap"><label>Email Address</label><input required="" class="input-control" type="email" placeholder="name@domain.com"></div>
+                    <form onsubmit="event.preventDefault(); alert('Booking logged successfully inside validation container.');">
+                        <div class="form-element-wrap"><label>Your name</label><input required class="input-control" type="text" placeholder="Enter name"></div>
+                        <div class="form-element-wrap"><label>Email Address</label><input required class="input-control" type="email" placeholder="name@domain.com"></div>
                         <div class="form-element-wrap">
                             <label>Item to test</label>
                             <select class="input-control" style="background-color: var(--bg-dark);">
@@ -680,14 +668,12 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 5: COMPLEX REPORT VERIFICATION LEDGER SYSTEM -->
         <div id="viewframe-verify" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Official Registry</span>
             <h1 class="section-title">Report <em>Verification</em> Ledger</h1>
             <p class="description">Welcome to the digital secure validation network node. Input your alphanumeric registration tracking code string below to pull live encrypted testing datasets.</p>
 
             <div class="verification-panel-container">
-                <!-- --- REMOVED THE HEADER TEXT, MODIFIED HINT TEXT ACCORDING TO USER PATH INSTRUCTIONS --- -->
                 <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; letter-spacing: 0.2px;">Please input the Specimen no./ Product code beginning with RATNAXR (e.g., RATNAXR00425).</p>
                 
                 <div class="search-action-row">
@@ -695,12 +681,10 @@
                     <button type="button" class="search-action-btn" onclick="processLedgerValidationCheck()">Verify</button>
                 </div>
 
-                <!-- Dynamic Cryptographic Target Output Frame handled via JS -->
-                <div id="ledger-output-card-wrapper" class="output-card-target"></div>
+                <div id="ledger-output-card-wrapper" class="output-card-target" style="display: none;"></div>
             </div>
         </div>
 
-        <!-- VIEW SECTION 6: CONTACT INFORMATION PANEL -->
         <div id="viewframe-contact" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Contact</span>
             <h1 class="section-title">Find us across networks.</h1>
@@ -729,15 +713,13 @@
             </div>
         </div>
 
-        <!-- Call To Action Lower Canvas Block Banner -->
         <div class="bottom-cta-banner">
             <div class="hindi-motto-phrase" style="color: var(--gold-primary); font-size: 0.95rem; margin-bottom: 16px; letter-spacing: 1px;">सत्यमेव जयते</div>
             <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px; max-width:100%; text-align:center;">Bring your stone. Leave with certainty.</h2>
             <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 460px; margin: 0 auto 24px auto;">Digital lab ledger records are accessible 24/7 globally to maintain complete transactional transparency.</p>
-            <button class="btn-filled" onclick="routeSPAView(&#39;verify&#39;)">Launch Search Portal</button>
+            <button class="btn-filled" onclick="routeSPAView('verify')">Launch Search Portal</button>
         </div>
 
-        <!-- Integrated Persistent Base Footer Container -->
         <footer>
             <div class="footer-max-width">
                 <div>
@@ -754,7 +736,7 @@
                 <div>
                     <div class="foot-header-lbl">Support Nodes</div>
                     <a href="mailto:vedicratnalab@gmail.com" class="foot-meta-txt">vedicratnalab@gmail.com</a>
-                    <span class="foot-meta-txt" style="margin-top: 12px;"><span onclick="routeSPAView(&#39;booking&#39;)" style="color: var(--gold-primary); cursor: pointer;" class="foot-link">Schedule a visit →</span></span>
+                    <span class="foot-meta-txt" style="margin-top: 12px;"><span onclick="routeSPAView('booking')" style="color: var(--gold-primary); cursor: pointer;" class="foot-link">Schedule a visit →</span></span>
                 </div>
             </div>
             <div class="bottom-copyright-bar">
@@ -765,7 +747,6 @@
 
     </div>
 
-    <!-- Core Dynamic Routing and Search Verification Processing Scripts -->
     <script>
         // Bulletproof Client-side Navigation Router Engine with null reference protections
         function routeSPAView(viewId) {
@@ -785,6 +766,12 @@
                     }
                 }
             });
+
+            // Ensure previous query output clears automatically when jumping tabs
+            if (viewId !== 'verify') {
+                const resultsArea = document.getElementById('ledger-output-card-wrapper');
+                if (resultsArea) resultsArea.style.display = 'none';
+            }
             window.scrollTo(0, 0);
         }
 
@@ -825,12 +812,12 @@
 
             if (!isNaN(idInt) && idInt >= 1 && idInt <= 25000) {
                 
-                // Simplified, authentic, highly outstanding but non-cluttered results pool tailored to Malas
+                // Meticulously simplified authentic outcomes tailored natively to Malas & Sacred Seeds
                 const statusPool = [
-                    "VERIFIED CRYPTO-AUTHENTIC RECORD // LEDGER NODE ACTIVE",
-                    "AUTHENTIC DATA INDEX RESOLVED // SECURE STATE PROFILE",
-                    "VERIFIED PRIMARY BLOCK INTEGRITY // REPORT MATRIX INTACT",
-                    "DIGITALLY SEALED IMMUTABLE DATA CARD // LEDGER SYNC COMPLETE"
+                    "VERIFIED GENUINE // REGISTRY STATUS: ACTIVE",
+                    "AUTHENTIC MALA RECORD CERTIFIED",
+                    "OFFICIAL VERIFICATION PASS // SECURE SYSTEM",
+                    "CERTIFIED GENUINE ARTIFACT // COMPLIANT LEDGER"
                 ];
 
                 const sourcePool = [
@@ -841,17 +828,17 @@
                 ];
 
                 const analysisPool = [
-                    "Natural Dense Ebony Wood Fiber Structure & Authentic Bead Surface Matrix Passed",
-                    "Genuine Natural Seed Compartments with Undisturbed Inner Core Cavities Passed",
-                    "Pure Organic Wood Layering & Real Mukhi Line Continuity Confirmed",
-                    "Authentic High-Density Plant Wood Material & Solid Center Core Formation Verified"
+                    "Genuine Natural Ebony Wood Structure & Authentic Surface Density Confirmed",
+                    "Authentic Inner Compartments & Real Mukhi Line Formations Verified",
+                    "Pure Karungali Ebony Core Fiber & Natural Density Match Confirmed",
+                    "Natural Plant Material Density & Intact Seed Grooves Confirmed"
                 ];
 
                 const remarksPool = [
                     "Laboratory testing confirms the string is completely genuine and premium grade. The natural wood grain patterns and bead surfaces show absolutely no signs of artificial coloring, replicas, or chemical treatments. Fully matches natural benchmarks.",
                     "Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed and completely intact, confirming a high-quality sacred artifact. Completely safe and free from any synthetic enhancements.",
                     "Complete organic profile match. The product shows structural continuity characteristic of premium, aged Karungali wood and high-grade spiritual seeds. Free from any artificial glues, compounds, or heat modifications.",
-                    "High-density material validation complete. Surface scans and weight checks show traditional natural parameters are fully met. The bead line alignments indicate organic growth cycles, completely verified under laboratory supervision."
+                    "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met. The bead line alignments indicate organic growth cycles, completely verified under laboratory supervision."
                 ];
 
                 // Seed selector formulas ensuring complete numeric stability per unique integer checked
@@ -919,5 +906,5 @@
             }
         }
     </script>
-
-</body></html>
+</body>
+</html>
