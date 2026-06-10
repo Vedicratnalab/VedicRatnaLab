@@ -922,6 +922,16 @@
                     </div>`;
             }
         }
+        // --- ADD THIS AT THE VERY BOTTOM OF YOUR SCRIPT TAG ---
+        // Automatically reads the link anchor (like /#verify) when the page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            const currentHash = window.location.hash.replace('#', '');
+            const validViews = ['home', 'services', 'stones', 'booking', 'verify', 'contact'];
+            
+            if (validViews.includes(currentHash)) {
+                routeSPAView(currentHash);
+            }
+        });
     </script>
 </body>
 </html>
