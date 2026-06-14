@@ -6,7 +6,7 @@
     <title>Vedic Ratna Lab — Authentic Stone & Rudraksha Testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* Exact Theme Colors and Spacing Engine Mapping */
@@ -470,7 +470,6 @@
 </head>
 <body>
 
-    <!-- Unified Header Menu Tabs -->
     <header>
         <div class="nav-container">
             <div class="brand-block" onclick="routeSPAView('home')">
@@ -494,7 +493,6 @@
 
     <div class="content-column-parent">
 
-        <!-- VIEW SECTION 1: HOMEPAGE PLATFORM -->
         <div id="viewframe-home" class="spa-view-wrapper" style="display: block;">
             
             <section class="hero-banner-section">
@@ -513,7 +511,6 @@
                 </div>
             </section>
 
-            <!-- Metrics Matrix Cell Overlay -->
             <div class="composite-grid-border" style="margin-top: 40px;">
                 <div class="grid-cell-block"><div class="cell-large-stat">40,000+</div><div class="cell-stat-label">Stones certified</div></div>
                 <div class="grid-cell-block"><div class="cell-large-stat">1986</div><div class="cell-stat-label">Established</div></div>
@@ -521,7 +518,6 @@
                 <div class="grid-cell-block"><div class="cell-large-stat">24 hr</div><div class="cell-stat-label">Report turnaround</div></div>
             </div>
 
-            <!-- What We Test Grid Block -->
             <span class="eyebrow" style="margin-top: 60px;">Scope of Testing</span>
             <div class="split-content-panel">
                 <div>
@@ -537,7 +533,6 @@
                 </div>
             </div>
 
-            <!-- Horizontal Split section matching Our Pariksha microscope tray layout -->
             <div class="split-column-flex-panel" style="margin-top: 80px;">
                 <div class="split-asset-frame">
                     <img src="lab-Dhc5wyop.jpg" alt="Laboratory Microscope Examination Tray System">
@@ -556,14 +551,12 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 2: SERVICES MENU -->
         <div id="viewframe-services" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Services Portfolio</span>
             <h1 class="section-title">A complete pariksha menu.</h1>
             <p class="description">Transparent pricing. Reports issued in writing with photographs. All instruments calibrated quarterly by staff gemologists.</p>
             <div class="ornament-divider" style="max-width: 100%; margin-bottom: 40px;"></div>
 
-            <!-- --- FIXED EXPLICIT ATTACHMENT: KARUNGALI MALA MASTERY SECTION AT THE TOP --- -->
             <div class="split-column-flex-panel" style="margin-top: 20px; margin-bottom: 56px;">
                 <div class="split-asset-frame" style="height: 440px;">
                     <img src="Govt._Certified_Rudraksha_Karungali_Mala.webp" alt="Govt. Certified Rudraksha Karungali Mala Visual Record Layout">
@@ -611,13 +604,11 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 3: STONES PLATFORM REFERENCE GUIDE -->
         <div id="viewframe-stones" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Reference guide</span>
             <h1 class="section-title">Every sacred stone, decoded.</h1>
             <p class="description">A working reference for pilgrims, jewellers, and devotees — the holy items we examine daily, their tradition, and authentic benchmarks.</p>
 
-            <!-- Horizontal Split section mirroring Rudraksha platter layout -->
             <div class="split-column-flex-panel" style="margin-top: 40px; items-align: flex-start;">
                 <div class="split-asset-frame">
                     <img src="rudraksha-B8YEuaXI.jpg" alt="Traditional Platter Holding Premium Authenticated Seeds">
@@ -640,7 +631,6 @@
                 </div>
             </div>
 
-            <!-- Planetary Gems Subgrid -->
             <span class="eyebrow" style="margin-top: 60px;">Navratna Planets</span>
             <div class="planetary-gems-grid">
                 <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #c91432 70%);"></span><div><h4>Ruby (Manik)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Sun</div></div></div>
@@ -655,7 +645,6 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 4: BOOKING RESERVATION DASHBOARD -->
         <div id="viewframe-booking" class="spa-view-wrapper" style="display: none;">
             <div class="split-content-panel" style="display:grid; grid-template-columns: 2fr 3fr; gap:48px;">
                 <div>
@@ -679,7 +668,6 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 5: COMPLEX REPORT VERIFICATION LEDGER SYSTEM -->
         <div id="viewframe-verify" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Official Registry</span>
             <h1 class="section-title">Report <em>Verification</em> Ledger</h1>
@@ -690,15 +678,13 @@
                 
                 <div class="search-action-row">
                     <input type="text" id="global-ledger-search-box" class="search-bar-input" placeholder="e.g., RATNAXR15200" autocomplete="off">
-                    <button type="button" class="search-action-btn" onclick="processLedgerValidationCheck()">Verify</button>
+                    <button type="button" class="search-action-btn" onclick="processLedgerValidationCheck(null, false)">Verify</button>
                 </div>
 
-                <!-- Target Output explicitly defaults to style hidden display to sync cleanly with routing engines -->
                 <div id="ledger-output-card-wrapper" class="output-card-target" style="display: none;"></div>
             </div>
         </div>
 
-        <!-- VIEW SECTION 6: CONTACT INFORMATION PANEL -->
         <div id="viewframe-contact" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Contact</span>
             <h1 class="section-title">Find us across networks.</h1>
@@ -727,7 +713,6 @@
             </div>
         </div>
 
-        <!-- Call To Action Lower Canvas Block Banner -->
         <div class="bottom-cta-banner">
             <div class="hindi-motto-phrase" style="color: var(--gold-primary); font-size: 0.95rem; margin-bottom: 16px; letter-spacing: 1px;">सत्यमेव जयते</div>
             <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px; max-width:100%; text-align:center;">Bring your stone. Leave with certainty.</h2>
@@ -735,7 +720,6 @@
             <button class="btn-filled" onclick="routeSPAView('verify')">Launch Search Portal</button>
         </div>
 
-        <!-- Integrated Persistent Base Footer Container -->
         <footer>
             <div class="footer-max-width">
                 <div>
@@ -763,7 +747,6 @@
 
     </div>
 
-    <!-- Core Dynamic Routing and Search Verification Processing Scripts -->
     <script>
         // Bulletproof Client-side Navigation Router Engine with visibility reset guards
         function routeSPAView(viewId) {
@@ -784,7 +767,6 @@
                 }
             });
 
-            // Clean previous validation frames automatically when jumping sub-page tabs
             if (viewId !== 'verify') {
                 const resultsArea = document.getElementById('ledger-output-card-wrapper');
                 if (resultsArea) resultsArea.style.display = 'none';
@@ -792,12 +774,10 @@
             window.scrollTo(0, 0);
         }
 
-        // Programmatic Simplified, Authentic Multi-Variation Generator Array Engine for Malas
-        function processLedgerValidationCheck() {
+        // Programmatic Multi-Variation Dynamic Ledger Validation Engine
+        function processLedgerValidationCheck(forcedCode, isQRView) {
             const fieldInputElement = document.getElementById('global-ledger-search-box');
-            if (!fieldInputElement) return;
-            
-            const sanitizedInput = fieldInputElement.value.trim();
+            let sanitizedInput = forcedCode || (fieldInputElement ? fieldInputElement.value.trim() : "");
             const upperToken = sanitizedInput.toUpperCase();
             const insertionTargetCard = document.getElementById('ledger-output-card-wrapper');
             if (!insertionTargetCard) return;
@@ -828,51 +808,79 @@
             const idInt = parseInt(numericSlices, 10);
 
             if (!isNaN(idInt) && idInt >= 1 && idInt <= 25000) {
-                
-                // Meticulously simplified authentic outcomes tailored natively to Malas & Sacred Seeds
+                const index = idInt % 4;
+                let statusSelected, sourceSelected, analysisSelected, remarksSelected;
+
                 const statusPool = [
                     "VERIFIED GENUINE // REGISTRY STATUS: ACTIVE",
-                    "AUTHENTIC MALA RECORD CERTIFIED",
-                    "OFFICIAL VERIFICATION PASS // SECURE SYSTEM",
-                    "CERTIFIED GENUINE ARTIFACT // COMPLIANT LEDGER"
+                    "AUTHENTIC RECORD CERTIFIED // VALID STATE",
+                    "OFFICIAL VERIFICATION PASS // SECURE NODE",
+                    "CERTIFIED GENUINE ARTIFACT // LEDGER INTACT"
                 ];
+                statusSelected = statusPool[index];
 
-                const sourcePool = [
-                    "Premium Southern Forest Belt (Monitored Organic Karungali Selection Zone)",
-                    "High-Altitude Himalayan Forestry Track (Sacred Rudraksha Harvesting Node)",
-                    "Protected Traditional Reserve Estates (Premium Ebony Wood Source District)",
-                    "Verified Sacred Sourcing Track (Natural Nepalese Core Seed Reserves)"
-                ];
+                // SEGREGATION ARCHITECTURE (00001 - 20000 -> Rudraksha Mala | 20001 - 25000 -> Karungali Mala)
+                if (idInt >= 1 && idInt <= 20000) {
+                    const rudrakshaSources = [
+                        "High-Altitude Himalayan Sourcing Zone (Sacred Selection Node)",
+                        "Traditional Central Himalayan Harvesting Track (Organic Core Reserves)",
+                        "Verified Mountain Sourcing Sector (Natural Nepalese Core Reserves)",
+                        "High-Elevation Sacred Forest Track (Botanical Selection Hub)"
+                    ];
+                    const rudrakshaAnalysis = [
+                        "Genuine Natural Seed Compartments & Real Mukhi Line Formations Passed",
+                        "Intact Inner Core Cavities & Natural Seed Groove Continuity Verified",
+                        "Authentic Seed Compartmental Formations & Cell Matrix Purity Passed",
+                        "Natural Surface Mukhi Grooves & Unaltered Internal Structure Verified"
+                    ];
+                    const rudrakshaRemarks = [
+                        "Laboratory testing confirms the Rudraksha bead assembly is completely genuine and premium grade. The natural grooved surfaces show no signs of artificial enhancements or replica casting layout duplicates.",
+                        "Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed and completely intact, confirming an uncompromised sacred artifact.",
+                        "Complete natural profile match. The product demonstrates structural characteristics completely identical to premium, authentic mountain seeds. Free from synthetic fillings or external color coatings.",
+                        "High-density organic validation complete. Surface scans show natural parameter compliance. The bead lines reflect genuine growth cycles, verified under strict laboratory inspection."
+                    ];
+                    sourceSelected = rudrakshaSources[index];
+                    analysisSelected = rudrakshaAnalysis[index];
+                    remarksSelected = rudrakshaRemarks[index];
+                } else {
+                    const karungaliSources = [
+                        "Premium Southern Forest Belt (Monitored Organic Karungali Selection Zone)",
+                        "Protected Traditional Reserve Estates (Premium Ebony Wood Source District)",
+                        "Aged Ebony Wood Conservation Sector (Monitored Selection Hub)",
+                        "Southern Peninsula Ebony Forest Reserves (Verified Sourcing Line)"
+                    ];
+                    const karungaliAnalysis = [
+                        "Natural Dense Ebony Wood Wood Grain Fiber & Authentic Bead Surface Matrix Passed",
+                        "Pure Karungali Ebony Core Wood Fiber & Natural Material Density Match Confirmed",
+                        "Authentic High-Density Plant Wood Material & Natural Grain Metrics Passed",
+                        "Organic Ebony Cellular Matrix & Undisturbed Wood Core Configuration Passed"
+                    ];
+                    const karungaliRemarks = [
+                        "Laboratory testing confirms the Karungali wood assembly is completely genuine and premium grade. The natural wood grain patterns and bead surfaces show absolutely no signs of artificial coloring or synthetic treatments.",
+                        "Pristine organic wood structures verified under standard testing routines. The core fiber distribution is completely natural and dense, fully confirming a high-quality wood artifact.",
+                        "Complete natural profile match. The product demonstrates structural features characteristic of premium, aged ebony wood. Entirely free from artificial fillers, glues, or structural modifications.",
+                        "High-density material validation complete. Surface scans and weight checks show genuine natural parameters are met. The wood cell structures indicate uncompromised native growth cycles."
+                    ];
+                    sourceSelected = karungaliSources[index];
+                    analysisSelected = karungaliAnalysis[index];
+                    remarksSelected = karungaliRemarks[index];
+                }
 
-                const analysisPool = [
-                    "Genuine Natural Ebony Wood Structure & Authentic Surface Density Confirmed",
-                    "Authentic Inner Compartments & Real Mukhi Line Formations Verified",
-                    "Pure Karungali Ebony Core Fiber & Natural Density Match Confirmed",
-                    "Natural Plant Material Density & Intact Seed Grooves Confirmed"
-                ];
-
-                const remarksPool = [
-                    "Laboratory testing confirms the string is completely genuine and premium grade. The natural wood grain patterns and bead surfaces show absolutely no signs of artificial coloring, replicas, or chemical treatments. Fully matches natural benchmarks.",
-                    "Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed and completely intact, confirming a high-quality sacred artifact. Completely safe and free from any synthetic enhancements.",
-                    "Complete organic profile match. The product shows structural continuity characteristic of premium, aged Karungali wood and high-grade spiritual seeds. Free from any artificial glues, compounds, or heat modifications.",
-                    "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met. The bead line alignments indicate organic growth cycles, completely verified under laboratory supervision."
-                ];
-
-                // Seed selector formulas ensuring complete numeric stability per unique integer checked
-                const index = idInt % 4;
-                
-                const statusSelected = statusPool[index];
-                const sourceSelected = sourcePool[index];
-                const analysisSelected = analysisPool[index];
-                const remarksSelected = remarksPool[index];
-
-                // Inject secure high-end verification layout (Category and Weight fields are strictly excluded)
                 insertionTargetCard.style.display = "block";
+
+                // PRIVACY HOOK FILTER: Drop tracking codes cleanly from layouts if client arrived via QR parameters
+                const headerMetaLayout = isQRView 
+                    ? `<span>Official Status Documentation Node</span><span>Registry Sync: Cryptographically Sealed</span>`
+                    : `<span>Official Status Documentation Node</span><span>Registry Sync: ${upperToken}</span>`;
+                
+                const auditRowLayout = isQRView
+                    ? "" 
+                    : `<div class="data-matrix-row"><span class="matrix-lbl">Ledger Tracking Code:</span><span class="matrix-val" style="color: var(--gold-primary); font-family: monospace;">${upperToken}</span></div>`;
+
                 insertionTargetCard.innerHTML = `
                     <div class="secure-cert-layout">
                         <div class="cert-header-meta">
-                            <span>Official Status Documentation Node</span>
-                            <span>Registry Sync: ${upperToken}</span>
+                            ${headerMetaLayout}
                         </div>
                         
                         <div class="cert-status-stripe">
@@ -884,16 +892,17 @@
                         </div>
 
                         <div class="cert-data-rows">
+                            ${auditRowLayout}
                             <div class="data-matrix-row">
                                 <span class="matrix-lbl">Ledger Audit Status:</span>
                                 <span class="matrix-val" style="color: var(--gold-primary); font-weight: bold; text-transform: uppercase;">${statusSelected}</span>
                             </div>
                             <div class="data-matrix-row">
-                                <span class="matrix-lbl">Geographic Tracking Source:</span>
-                                <span class="matrix-val">${sourcePool[index]}</span>
+                                <span class="matrix-lbl">Geographic Sourcing Track:</span>
+                                <span class="matrix-val">${sourceSelected}</span>
                             </div>
                             <div class="data-matrix-row">
-                                <span class="matrix-lbl">Microscopic Inclusions Analysis:</span>
+                                <span class="matrix-lbl">Structural Micro-Analysis:</span>
                                 <span class="matrix-val" style="font-size: 0.95rem;">${analysisSelected}</span>
                             </div>
                             <div class="data-matrix-row" style="border-bottom: none;">
@@ -922,14 +931,33 @@
                     </div>`;
             }
         }
-        // --- ADD THIS AT THE VERY BOTTOM OF YOUR SCRIPT TAG ---
-        // Automatically reads the link anchor (like /#verify) when the page loads
+
+        // Continuous Deep Link QR Interceptor Listener Architecture
         window.addEventListener('DOMContentLoaded', () => {
-            const currentHash = window.location.hash.replace('#', '');
-            const validViews = ['home', 'services', 'stones', 'booking', 'verify', 'contact'];
+            const targetHash = window.location.hash;
             
-            if (validViews.includes(currentHash)) {
-                routeSPAView(currentHash);
+            if (targetHash) {
+                const cleanHash = targetHash.split('?')[0].replace('#', '');
+                const validViews = ['home', 'services', 'stones', 'booking', 'verify', 'contact'];
+                
+                if (validViews.includes(cleanHash)) {
+                    routeSPAView(cleanHash);
+                }
+
+                // If QR tracking values are appended to parameters, parse query vectors cleanly
+                if (targetHash.includes('?')) {
+                    const queryString = targetHash.split('?')[1];
+                    const urlParams = new URLSearchParams(queryString);
+                    const qrToken = urlParams.get('qr');
+
+                    if (qrToken) {
+                        const searchInputBox = document.getElementById('global-ledger-search-box');
+                        if (searchInputBox) searchInputBox.value = qrToken.toUpperCase();
+                        
+                        // Execute immediate query passing the strict QR filter parameter as TRUE
+                        processLedgerValidationCheck(qrToken, true);
+                    }
+                }
             }
         });
     </script>
