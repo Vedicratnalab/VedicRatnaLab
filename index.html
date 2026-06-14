@@ -427,6 +427,11 @@
 
         /* --- VERIFICATION INTERFACE STYLING --- */
         .verification-panel-container { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 40px 32px; border-radius: 4px; margin-bottom: 40px; }
+        
+        /* HOOKS FOR QR INTERCEPTOR HIDING ROUTINES */
+        #verify-manual-instruction { transition: opacity 0.2s; }
+        #verify-search-tools { transition: opacity 0.2s; }
+
         .search-action-row { display: flex; gap: 12px; margin-top: 20px; margin-bottom: 12px; }
         .search-bar-input { flex: 1; background: var(--bg-dark); border: 1px solid rgba(212, 163, 89, 0.3); padding: 16px; color: #fff; font-size: 1rem; border-radius: 2px; font-family: inherit; letter-spacing: 0.5px; }
         .search-bar-input:focus { outline: 1px solid var(--gold-primary); }
@@ -673,10 +678,10 @@
             <h1 class="section-title">Report <em>Verification</em> Ledger</h1>
             <p class="description">Welcome to the digital secure validation network node. Input your alphanumeric registration tracking code string below to pull live encrypted testing datasets.</p>
 
-            <div class="verification-panel-container">
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; letter-spacing: 0.2px;">Please input the Specimen no./ Product code beginning with RATNAXR (e.g., RATNAXR00425).</p>
+            <div id="verify-main-panel" class="verification-panel-container">
+                <p id="verify-manual-instruction" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; letter-spacing: 0.2px;">Please input the Specimen no./ Product code beginning with RATNAXR (e.g., RATNAXR00425).</p>
                 
-                <div class="search-action-row">
+                <div id="verify-search-tools" class="search-action-row">
                     <input type="text" id="global-ledger-search-box" class="search-bar-input" placeholder="e.g., RATNAXR15200" autocomplete="off">
                     <button type="button" class="search-action-btn" onclick="processLedgerValidationCheck(null, false)">Verify</button>
                 </div>
@@ -767,6 +772,7 @@
                 }
             });
 
+            // Clean previous validation frames automatically when jumping sub-page tabs
             if (viewId !== 'verify') {
                 const resultsArea = document.getElementById('ledger-output-card-wrapper');
                 if (resultsArea) resultsArea.style.display = 'none';
@@ -774,10 +780,11 @@
             window.scrollTo(0, 0);
         }
 
-        // Programmatic Multi-Variation Dynamic Ledger Validation Engine
+        // Programmatic Simplified, Authentic Multi-Variation Generator Array Engine for Malas
         function processLedgerValidationCheck(forcedCode, isQRView) {
             const fieldInputElement = document.getElementById('global-ledger-search-box');
             let sanitizedInput = forcedCode || (fieldInputElement ? fieldInputElement.value.trim() : "");
+            
             const upperToken = sanitizedInput.toUpperCase();
             const insertionTargetCard = document.getElementById('ledger-output-card-wrapper');
             if (!insertionTargetCard) return;
@@ -808,6 +815,7 @@
             const idInt = parseInt(numericSlices, 10);
 
             if (!isNaN(idInt) && idInt >= 1 && idInt <= 25000) {
+                
                 const index = idInt % 4;
                 let statusSelected, sourceSelected, analysisSelected, remarksSelected;
 
@@ -932,11 +940,12 @@
             }
         }
 
-        // Continuous Deep Link QR Interceptor Listener Architecture
+        // Deep Link Interceptor Listener Architecture
         window.addEventListener('DOMContentLoaded', () => {
             const targetHash = window.location.hash;
             
             if (targetHash) {
+                // Parse standard view tokens
                 const cleanHash = targetHash.split('?')[0].replace('#', '');
                 const validViews = ['home', 'services', 'stones', 'booking', 'verify', 'contact'];
                 
@@ -944,17 +953,34 @@
                     routeSPAView(cleanHash);
                 }
 
-                // If QR tracking values are appended to parameters, parse query vectors cleanly
+                // ADVANCED QR INTERCEPTOR ROUTINE
+                // Tracks query parameters appended via modern QR encoding standards
                 if (targetHash.includes('?')) {
                     const queryString = targetHash.split('?')[1];
                     const urlParams = new URLSearchParams(queryString);
                     const qrToken = urlParams.get('qr');
 
                     if (qrToken) {
-                        const searchInputBox = document.getElementById('global-ledger-search-box');
-                        if (searchInputBox) searchInputBox.value = qrToken.toUpperCase();
+                        // 1. Target the elements to be hidden
+                        const manualInstruction = document.getElementById('verify-manual-instruction');
+                        const searchTools = document.getElementById('verify-search-tools');
+                        const outerPanel = document.getElementById('verify-main-panel');
+
+                        // 2. Hide manual lookup UI elements instantly
+                        if (manualInstruction) manualInstruction.style.display = "none";
+                        if (searchTools) searchTools.style.display = "none";
                         
-                        // Execute immediate query passing the strict QR filter parameter as TRUE
+                        // Optional: Reduce outer container padding for a cleaner result-only look
+                        if (outerPanel) outerPanel.style.padding = "10px 0";
+
+                        // 3. Prevent the nav router from restoring these tools later in the session
+                        // This turns off manual lookup functionality for this specific page visit
+                        if (searchInputBox) {
+                            searchInputBox.disabled = true;
+                            searchInputBox.placeholder = "Certificate loaded via secure scan.";
+                        }
+                        
+                        // 4. Execute immediate query passing the strict QR privacy filter parameter as TRUE
                         processLedgerValidationCheck(qrToken, true);
                     }
                 }
