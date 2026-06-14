@@ -2,6 +2,7 @@
    Vedic Ratna Lab Core Style Sheet Configuration
    ========================================================================== */
 
+/* Global Resets & Layout Engine Spacing Rules */
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +11,12 @@
 }
 
 :root {
-    --bg-dark: #0f0804; 
-    --bg-card: #160e08; 
-    --border-gold: rgba(212, 163, 89, 0.22); 
-    --gold-primary: #d4a359; 
+    --bg-dark: #0f0804;       /* Deep luxury warm black background from original theme */
+    --bg-card: #160e08;       /* Dark premium card contrast fill */
+    --border-gold: rgba(212, 163, 89, 0.22); /* Sharp structural gold lines */
+    --gold-primary: #d4a359;  /* Serif typeface heading tone */
     --gold-light: #f3d29a;
-    --orange-accent: #f29900; 
+    --orange-accent: #f29900; /* High-visibility interactive buttons and active states */
     --text-light: #f5f5f7;
     --text-muted: #b5a99e;
     --success-green: #2ecc71;
@@ -36,6 +37,7 @@ h1, h2, h3, h4 {
     font-weight: 400;
 }
 
+/* Fixed Navigation Header Architecture Layout mapping */
 header {
     position: fixed;
     top: 0;
@@ -54,7 +56,7 @@ header {
     margin: 0 auto;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-between: space-between;
     align-items: center;
     gap: 16px;
 }
@@ -82,7 +84,10 @@ header {
     box-shadow: 0 0 20px rgba(242, 153, 0, 0.2);
 }
 
-.brand-text { line-height: 1.2; }
+.brand-text {
+    line-height: 1.2;
+}
+
 .brand-text .main-title {
     color: var(--gold-primary);
     font-size: 1.15rem;
@@ -92,6 +97,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .brand-text .sub-title {
     font-size: 0.6rem;
     text-transform: uppercase;
@@ -101,7 +107,13 @@ header {
     margin-top: 1px;
 }
 
-.nav-links { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
 .nav-link {
     color: var(--text-muted);
     text-decoration: none;
@@ -113,6 +125,7 @@ header {
     transition: all 0.2s ease;
     white-space: nowrap;
 }
+
 .nav-link:hover, .nav-link.active {
     color: var(--gold-primary);
     background: rgba(212, 163, 89, 0.08);
@@ -131,13 +144,16 @@ header {
     border: none;
     cursor: pointer;
 }
+.header-action-btn:hover { opacity: 0.9; }
 
+/* Unified Single Page Canvas Display Containers */
 .spa-view-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 120px 24px 40px 24px;
 }
 
+/* Full Screen Bounded Atmospheric Hero Banner Element block */
 .hero-banner-section {
     position: relative;
     width: 100vw;
@@ -167,7 +183,12 @@ header {
     background: linear-gradient(to bottom, rgba(15, 8, 4, 0.4) 0%, rgba(15, 8, 4, 0.85) 70%, var(--bg-dark) 100%);
 }
 
-.hero-bounded-content { width: 100%; max-width: 1100px; text-align: left; }
+.hero-bounded-content {
+    width: 100%;
+    max-width: 1100px;
+    text-align: left;
+}
+
 .eyebrow {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -185,6 +206,7 @@ header {
     letter-spacing: -0.5px;
     max-width: 850px;
 }
+
 .section-title em {
     font-style: italic;
     color: var(--gold-primary);
@@ -202,7 +224,13 @@ header {
     line-height: 1.7;
 }
 
-.cta-row { display: flex; gap: 16px; margin-bottom: 64px; flex-wrap: wrap; }
+.cta-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+}
+
 .btn-filled {
     background: var(--orange-accent);
     color: var(--bg-dark);
@@ -215,6 +243,8 @@ header {
     border: none;
     transition: opacity 0.2s;
 }
+.btn-filled:hover { opacity: 0.9; }
+
 .btn-outlined {
     border: 1px solid var(--border-gold);
     color: var(--text-light);
@@ -226,7 +256,9 @@ header {
     background: transparent;
     transition: background 0.2s;
 }
+.btn-outlined:hover { background: rgba(212, 163, 89, 0.05); }
 
+/* Bounded Grid Metrics Wireframe Systems */
 .composite-grid-border {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -235,10 +267,16 @@ header {
     border: 1px solid var(--border-gold);
     margin-bottom: 64px;
 }
-.grid-cell-block { background: var(--bg-dark); padding: 28px; }
+
+.grid-cell-block {
+    background: var(--bg-dark);
+    padding: 28px;
+}
+
 .cell-large-stat { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold-primary); }
 .cell-stat-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-top: 4px; }
 
+/* --- TWO COLUMN FLOW FLEX PANELS --- */
 .split-column-flex-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -246,6 +284,7 @@ header {
     align-items: center;
     margin-bottom: 80px;
 }
+
 .split-asset-frame {
     width: 100%;
     height: 480px;
@@ -254,9 +293,17 @@ header {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     background: #110904;
+    position: relative;
 }
-.split-asset-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+.split-asset-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Our Pariksha Process Timelines */
 .process-list { display: flex; flex-direction: column; gap: 28px; margin-top: 32px; }
 .process-node { display: flex; gap: 20px; }
 .node-index {
@@ -267,6 +314,7 @@ header {
 .node-body h3 { font-size: 1.2rem; margin-bottom: 4px; color: var(--text-light); }
 .node-body p { font-size: 0.85rem; color: var(--text-muted); font-weight: 300; }
 
+/* Scope Cards Component Grid block */
 .scope-mini-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -278,12 +326,28 @@ header {
 .scope-cell h3 { font-size: 1.35rem; color: var(--gold-primary); margin-bottom: 8px; }
 .scope-cell p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 
+/* Alphanumeric Mukhi Breakdown Matrix */
+.mukhi-breakdown-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(212, 163, 89, 0.15);
+    border: 1px solid var(--border-gold);
+    margin-top: 32px;
+}
+.mukhi-breakdown-matrix .mukhi-matrix-cell { background: var(--bg-card); padding: 20px 24px; }
+.mukhi-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--gold-primary); }
+.mukhi-deity { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
+.mukhi-desc { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+/* Technical Portfolio Pricing Cards */
 .technical-menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 64px;
 }
+
 .menu-card {
     border: 1px solid var(--border-gold);
     background: var(--bg-card);
@@ -293,6 +357,7 @@ header {
     flex-direction: column;
     transition: transform 0.3s ease;
 }
+.menu-card:hover { transform: translateY(-2px); }
 .menu-card h2 { font-size: 1.45rem; color: var(--gold-primary); margin-bottom: 4px; }
 .menu-card .price-tag { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
 .menu-card p { font-size: 0.9rem; color: var(--text-light); opacity: 0.85; line-height: 1.5; margin-bottom: 20px; flex-grow: 1; }
@@ -300,24 +365,35 @@ header {
 .menu-card li { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; display: flex; gap: 8px; }
 .menu-card-link { margin-top: 24px; font-size: 0.85rem; color: var(--orange-accent); text-decoration: none; font-weight: 600; cursor: pointer; }
 
+/* Interactive Form Modules */
 .form-panel { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 36px; display: flex; flex-direction: column; gap: 20px; }
 .input-control { width: 100%; background: var(--bg-dark); border: 1px solid var(--border-gold); padding: 12px 16px; color: #fff; font-family: inherit; border-radius: 2px; font-size: 0.9rem; }
 
+/* Planetary Capsule Spheres */
 .planetary-gems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
 .gem-capsule { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 20px; display: flex; align-items: center; gap: 16px; border-radius: 4px; }
 .gem-sphere { width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0; box-shadow: inset -6px -6px 12px rgba(0,0,0,0.8), 0 4px 10px rgba(212,163,89,0.15); }
 
+/* Contact Specific Architecture */
 .contact-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
 .contact-pane { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 32px; border-radius: 4px; }
 .pane-title { font-size: 1.35rem; color: var(--gold-primary); margin-bottom: 12px; }
 .pane-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
 .map-frame-block { width: 100%; height: 360px; border: 1px solid var(--border-gold); background: #130c06; border-radius: 2px; display: grid; place-items: center; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
 
+/* --- VERIFICATION NODES & SUCCESS CARD LAYOUTS --- */
 .verification-panel-container { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 40px 32px; border-radius: 4px; margin-bottom: 40px; }
 .search-action-row { display: flex; gap: 12px; margin-top: 20px; margin-bottom: 12px; }
 .search-bar-input { flex: 1; background: var(--bg-dark); border: 1px solid rgba(212, 163, 89, 0.3); padding: 16px; color: #fff; font-size: 1rem; border-radius: 2px; }
 .search-action-btn { background: var(--orange-accent); color: var(--bg-dark); border: none; padding: 0 32px; font-weight: 700; font-size: 0.9rem; cursor: pointer; text-transform: uppercase; }
-.output-card-target { margin-top: 32px; display: none; }
+
+/* Strictly hidden on init via logic constraints to avoid rendering before query */
+.output-card-target { margin-top: 32px; display: none; } 
+
+/* UI Animation Interceptor Smooth State Toggles */
+#verify-manual-instruction, #verify-search-tools {
+    transition: opacity 0.25s ease-in-out, display 0.25s ease-in-out;
+}
 
 .secure-cert-layout { background: #070301; border: 2px solid var(--gold-primary); padding: 32px; border-radius: 2px; background-image: linear-gradient(rgba(212, 163, 89, 0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(212, 163, 89, 0.01) 1px, transparent 1px); background-size: 20px 20px; }
 .cert-header-meta { display: flex; justify-content: space-between; font-size: 0.65rem; color: var(--gold-primary); letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px dashed rgba(212, 163, 89, 0.25); padding-bottom: 12px; margin-bottom: 24px; font-weight: 600; }
@@ -346,26 +422,32 @@ footer { border-top: 1px solid var(--border-gold); padding: 64px 24px 32px 24px;
 .foot-meta-txt { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 6px; display: block; text-decoration: none; }
 .bottom-copyright-bar { border-top: 1px solid rgba(212,163,89,0.08); padding-top: 24px; margin-top: 48px; display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(255,255,255,0.25); max-width: 1100px; margin-left: auto; margin-right: auto; }
 
+/* Responsive Media Viewport Breaks */
 @media (max-width: 968px) {
     .split-column-flex-panel { grid-template-columns: 1fr; gap: 40px; }
     .split-asset-frame { height: 360px; }
     .technical-menu-grid { grid-template-columns: repeat(2, 1fr); }
     .composite-grid-border { grid-template-columns: repeat(2, 1fr); }
 }
+
 @media (max-width: 768px) {
     header { height: auto; padding: 12px 16px; }
     .nav-container { flex-direction: column; justify-content: center; gap: 10px; }
     .nav-links { justify-content: center; width: 100%; }
+    .nav-link { padding: 6px 10px; font-size: 0.78rem; }
     .header-action-btn { display: none; }
     .spa-view-wrapper { padding-top: 160px; }
     .hero-banner-section { margin-top: -110px; }
 }
+
+@media (max-width: 550px) {
+    .planetary-gems-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 600px) {
     .technical-menu-grid { grid-template-columns: 1fr; }
     .scope-mini-grid { grid-template-columns: 1fr; }
     .composite-grid-border { grid-template-columns: 1fr; }
     .section-title { font-size: 2.3rem; }
+    .footer-max-width { grid-template-columns: 1fr; gap: 32px; }
 }
-</style>
-</head>
-...
